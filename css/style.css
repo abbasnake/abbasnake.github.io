@@ -1,0 +1,13 @@
+.title {
+    text-align: center;
+}
+
+.calendar__entry {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 2px;
+}
+
+.calendar__entry__workers {
+    text-align: center;
+}
