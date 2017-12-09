@@ -1,0 +1,5 @@
+- button add new default obj.key = "blablabla"
+- rearrange entries to be by date
+- save changes until opened next time
+
+- maybe make a python dissasembly program for what head of actor troup is sending
