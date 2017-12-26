@@ -2,23 +2,24 @@
 // GLOBAL VARIABLES***********************************************************************
 //****************************************************************************************
 
-var canvasWidth = document.getElementById("canvas").offsetWidth;
-var canvasHeight = canvasWidth/2;
+let canvasWidth = document.getElementById("canvas").offsetWidth;
+let canvasHeight = canvasWidth/2;
 
-var exampleSimbol;
+let exampleSimbol;
 
-var rBackgroundSlider, gBackgroundSlider, bBackgroundSlider; 
-var rSlider, gSlider, bSlider, thickSlider, lineAreaSlider, lineCountSlider;
+let rBackgroundSlider, gBackgroundSlider, bBackgroundSlider; 
+let rSlider, gSlider, bSlider, thickSlider, lineAreaSlider, lineCountSlider;
 
-var sliderWidth = canvasWidth/5;
-var sliderArray = [];
+let sliderWidth = canvasWidth/5;
+let sliderArray = [];
 
 // STANDART PROCESSING P5 SETUP FUNCTION***************************************************
 //*****************************************************************************************
 
 function setup() {
     pixelDensity(2); // this sets the resolution of the canvas or something
-    createCanvas(canvasWidth, canvasHeight).parent("canvas").style("border", "2px solid #740D09"); // canvas is a div id
+    createCanvas(canvasWidth, canvasHeight).parent("canvas")
+    .style("border", "2px solid #740D09"); // canvas is a div id
 
     rBackgroundSlider = createSlider(0, 255, 255, 1).parent("rBackground");
     rBackgroundSlider.size(sliderWidth);
@@ -133,21 +134,21 @@ function windowResized(){
 
 function Simbol() {
 
-    var lineArea = 20; // size of area for random start and end points
-    var lineCount = 100; // how many lines to use
-    var lineThickness = 1;
+    let lineArea = 20; // size of area for random start and end points
+    let lineCount = 100; // how many lines to use
+    let lineThickness = 1;
 
     // Local size variables
-    var centerOfWidth = canvasWidth/2;
-    var centerOfHeight = canvasHeight/2;
-    var widthUnit = canvasWidth/20; //the whole width divided in 20 units
-    var heightUnit = canvasHeight/10; // the whole height divided in 10 units
+    let centerOfWidth = canvasWidth/2;
+    let centerOfHeight = canvasHeight/2;
+    let widthUnit = canvasWidth/20; //the whole width divided in 20 units
+    let heightUnit = canvasHeight/10; // the whole height divided in 10 units
 
     // Local color variables
-    var redColor = 0;
-    var greenColor = 0;
-    var blueColor = 0;
-    var colorRandom = false;
+    let redColor = 0;
+    let greenColor = 0;
+    let blueColor = 0;
+    let colorRandom = false;
 
     // set area method
     this.setLineArea = (num) => {
@@ -176,7 +177,7 @@ function Simbol() {
     };
 
     // color + randomness
-    var setColor = () => {
+    let setColor = () => {
         if (colorRandom){
             stroke(int(random(redColor)), int(random(greenColor)), int(random(blueColor)));
             // make greyscale if color set to black and randomness is true
@@ -188,15 +189,15 @@ function Simbol() {
         }
     };
 
-    var adjustAndSetThickness = () => {
-        var adjustedLineThickness = map(width, 300, 960, lineThickness/3, lineThickness);
+    let adjustAndSetThickness = () => {
+        let adjustedLineThickness = map(width, 300, 960, lineThickness/3, lineThickness);
         strokeWeight(adjustedLineThickness);
     };
 
     // Return a random point within the given area + resizing it according to window size
-    var randomAreaPoint = () => {
-        for(var i = 0; i<lineCount; i++){
-            var adjustedLineArea = map(width, 300, 960, lineArea/3, lineArea);
+    let randomAreaPoint = () => {
+        for(let i = 0; i<lineCount; i++){
+            let adjustedLineArea = map(width, 300, 960, lineArea/3, lineArea);
             return int(random(-adjustedLineArea, adjustedLineArea));
         }
     };
@@ -204,17 +205,17 @@ function Simbol() {
     // Each of the line start and end points are calculated in the following way:
     // center of canvas + how many units away from center + add user set randomness (lineArea).
     // It's basically a modified line() function
-    var createLines = (x1FromCenter, y1FromCenter, x2FromCenter, y2FromCenter) => {
-        for (var i = 0; i<lineCount; i++){
+    let createLines = (x1FromCenter, y1FromCenter, x2FromCenter, y2FromCenter) => {
+        for (let i = 0; i<lineCount; i++){
 
             adjustAndSetThickness();
             setColor(); // setting color for each line
 
             // point = center + (one unit * number of units) + randomness;
-            var x1 = centerOfWidth + (x1FromCenter * widthUnit) + randomAreaPoint();
-            var y1 = centerOfHeight + (y1FromCenter * heightUnit) + randomAreaPoint();
-            var x2 = centerOfWidth + (x2FromCenter * widthUnit) + randomAreaPoint();
-            var y2 = centerOfHeight + (y2FromCenter * heightUnit) + randomAreaPoint();
+            let x1 = centerOfWidth + (x1FromCenter * widthUnit) + randomAreaPoint();
+            let y1 = centerOfHeight + (y1FromCenter * heightUnit) + randomAreaPoint();
+            let x2 = centerOfWidth + (x2FromCenter * widthUnit) + randomAreaPoint();
+            let y2 = centerOfHeight + (y2FromCenter * heightUnit) + randomAreaPoint();
             line(x1, y1, x2, y2);
         }
     };
