@@ -33,4 +33,4 @@
 
 - fonts baltic (https://www.fontsquirrel.com/fonts/list/language/latvian/50)
 
-- switch from bootstrap to css-grid
+- the seperate signs need some selection to know which ones parameters are being changed

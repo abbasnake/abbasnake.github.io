@@ -7,9 +7,40 @@ let canvasWidth = document.getElementById("canvas").offsetWidth;
 let canvasHeight = canvasWidth/2;
 
 let simbolOne, simbolTwo, simbolThree;
+let simbolArray = [simbolOne, simbolTwo, simbolThree];
+let simbolOneOn = true;
+let simbolTwoOn = false;
+let simbolThreeOn = false;
+let simbolOnArray = [simbolOneOn, simbolTwoOn, simbolThreeOn];
+
+const simbolNames = [
+"dievs1",
+"dievs2",
+"marasL",
+"zalktis1",
+"zalktis2",
+"jumis",
+"zvaigzne1",
+"zvaigzne2",
+"marasK",
+"laimasS",
+"metenis",
+"usins",
+"austra",
+"martins",
+"aka",
+"janis",
+"austrasK",
+"krupitis",
+"meness",
+"saule",
+"perkons",
+"karogs"
+];
 
 let rBackgroundSlider, gBackgroundSlider, bBackgroundSlider; 
 let rSlider, gSlider, bSlider, thickSlider, lineAreaSlider, lineCountSlider;
+let simbolOneSelector, simbolTwoSelector, simbolThreeSelector;
 
 let sliderWidth = canvasWidth/5;
 let sliderArray = [];
@@ -25,6 +56,7 @@ setup = () => {
     thicknessSliderSetup();
     lineAreaSliderSetup();
     lineCountSliderSetup();
+    simbolSelectorSetup();
 
     sliderArray = [
     rBackgroundSlider,
@@ -45,35 +77,7 @@ setup = () => {
 draw = () => {
     background(rBackgroundSlider.value(), gBackgroundSlider.value(), bBackgroundSlider.value());
 
-    simbolOne = new Simbol();
-    simbolOne.setLineArea(lineAreaSlider.value()); // default 20
-    simbolOne.setLineCount(lineCountSlider.value()); // default 100
-    simbolOne.setLineThickness(thickSlider.value()/10); // default 1
-    simbolOne.setColorRandom(true); // default false
-    simbolOne.setRGB(rSlider.value(), gSlider.value(), bSlider.value()); // default (0, 0, 0), 
-
-    // simbolOne.dievs1(); // choose one or all or duplicate
-    // simbolOne.dievs2();
-    // simbolOne.marasL();
-    // simbolOne.zalktis1();
-    // simbolOne.zalktis2();
-    // simbolOne.jumis();
-    // simbolOne.zvaigzne1();
-    // simbolOne.zvaigzne2();
-    // simbolOne.marasK();
-    // simbolOne.laimasS();
-    // simbolOne.metenis();
-    // simbolOne.usins();
-    // simbolOne.austra();
-    // simbolOne.martins();
-    // simbolOne.aka();
-    // simbolOne.janis();
-    // simbolOne.austrasK();
-    simbolOne.krupitis();
-    // simbolOne.meness();
-    // simbolOne.saule();
-    // simbolOne.perkons();
-    // simbolOne.karogs();
+    drawSimbols();
 
     noLoop(); // comment out for animation
 };
@@ -150,6 +154,60 @@ lineCountSliderSetup = () => {
     lineCountSlider.mouseMoved(mouseActions);
 };
 
+simbolSelectorSetup = () => {
+    simbolOneSelector = createSelect().parent("simbolOne");
+    simbolTwoSelector = createSelect().parent("simbolTwo");
+    simbolThreeSelector = createSelect().parent("simbolThree");
+    for(let i = 0; i<simbolNames.length; i++){
+        simbolOneSelector.option(simbolNames[i]);
+        simbolTwoSelector.option(simbolNames[i]);
+        simbolThreeSelector.option(simbolNames[i]);
+    }
+};
+
+
+// DRAW FUNCTIONS***************************************************************************
+//******************************************************************************************
+
+drawSimbols = () => {
+    // check how many signs are selected
+
+    // create selected signs
+    for(let i = 0; i<simbolOnArray.length; i++){
+        if(simbolOnArray[i]){
+            simbolArray[i] = new Simbol();
+            simbolArray[i].setLineArea(lineAreaSlider.value()); // default 20
+            simbolArray[i].setLineCount(lineCountSlider.value()); // default 100
+            simbolArray[i].setLineThickness(thickSlider.value()/10); // default 1
+            simbolArray[i].setColorRandom(true); // default false
+            simbolArray[i].setRGB(rSlider.value(), gSlider.value(), bSlider.value()); // default (0, 0, 0), 
+
+            // simbolArray[i].dievs1(); // choose one or all or duplicate
+            // simbolArray[i].dievs2();
+            // simbolArray[i].marasL();
+            // simbolArray[i].zalktis1();
+            // simbolArray[i].zalktis2();
+            // simbolArray[i].jumis();
+            // simbolArray[i].zvaigzne1();
+            // simbolArray[i].zvaigzne2();
+            // simbolArray[i].marasK();
+            // simbolArray[i].laimasS();
+            // simbolArray[i].metenis();
+            // simbolArray[i].usins();
+            // simbolArray[i].austra();
+            // simbolArray[i].martins();
+            // simbolArray[i].aka();
+            // simbolArray[i].janis();
+            // simbolArray[i].austrasK();
+            simbolArray[i].krupitis();
+            // simbolArray[i].meness();
+            // simbolArray[i].saule();
+            // simbolArray[i].perkons();
+            // simbolArray[i].karogs();
+        }
+    }
+
+};
 
 // LATVIAN SIMBOL OBJECT/CLASSE/FUNCTION, I DONT KNOW***************************************
 //******************************************************************************************
