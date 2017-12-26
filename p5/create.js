@@ -2,10 +2,11 @@
 // GLOBAL VARIABLES***********************************************************************
 //****************************************************************************************
 
+let canvas;
 let canvasWidth = document.getElementById("canvas").offsetWidth;
 let canvasHeight = canvasWidth/2;
 
-let exampleSimbol;
+let simbolOne, simbolTwo, simbolThree;
 
 let rBackgroundSlider, gBackgroundSlider, bBackgroundSlider; 
 let rSlider, gSlider, bSlider, thickSlider, lineAreaSlider, lineCountSlider;
@@ -13,45 +14,17 @@ let rSlider, gSlider, bSlider, thickSlider, lineAreaSlider, lineCountSlider;
 let sliderWidth = canvasWidth/5;
 let sliderArray = [];
 
-// STANDART PROCESSING P5 SETUP FUNCTION***************************************************
+// PROCESSING P5 SETUP FUNCTION***************************************************
 //*****************************************************************************************
 
-function setup() {
-    pixelDensity(2); // this sets the resolution of the canvas or something
-    createCanvas(canvasWidth, canvasHeight).parent("canvas")
-    .style("border", "2px solid #740D09"); // canvas is a div id
+setup = () => {
+    canvasSetup();
 
-    rBackgroundSlider = createSlider(0, 255, 255, 1).parent("rBackground");
-    rBackgroundSlider.size(sliderWidth);
-    rBackgroundSlider.mouseMoved(mouseActions);
-    gBackgroundSlider = createSlider(0, 255, 255, 1).parent("gBackground");
-    gBackgroundSlider.size(sliderWidth);
-    gBackgroundSlider.mouseMoved(mouseActions);
-    bBackgroundSlider = createSlider(0, 255, 255, 1).parent("bBackground");
-    bBackgroundSlider.size(sliderWidth);
-    bBackgroundSlider.mouseMoved(mouseActions);
-
-    rSlider = createSlider(0, 255, 155, 1).parent("rColor");
-    rSlider.size(sliderWidth);
-    rSlider.mouseMoved(mouseActions);
-    gSlider = createSlider(0, 255, 0, 1).parent("gColor");
-    gSlider.size(sliderWidth);
-    gSlider.mouseMoved(mouseActions);
-    bSlider = createSlider(0, 255, 0, 1).parent("bColor");
-    bSlider.size(sliderWidth);
-    bSlider.mouseMoved(mouseActions);
-
-    thickSlider = createSlider(1, 500, 20, 1).parent("thickSetting");
-    thickSlider.size(sliderWidth);
-    thickSlider.mouseMoved(mouseActions);
-
-    lineAreaSlider = createSlider(1, 100, 20, 1).parent("areaSetting");
-    lineAreaSlider.size(sliderWidth);
-    lineAreaSlider.mouseMoved(mouseActions);
-    
-    lineCountSlider = createSlider(1, 500, 100, 1).parent("countSetting");
-    lineCountSlider.size(sliderWidth);
-    lineCountSlider.mouseMoved(mouseActions);
+    backgroundSliderSetup();
+    colorSliderSetup();
+    thicknessSliderSetup();
+    lineAreaSliderSetup();
+    lineCountSliderSetup();
 
     sliderArray = [
     rBackgroundSlider,
@@ -64,72 +37,121 @@ function setup() {
     lineAreaSlider,
     lineCountSlider
     ];
-}
+};
 
-// STANDART PROCESSING P5 DRAW FUNCTION*****************************************************
+// PROCESSING P5 DRAW FUNCTION*****************************************************
 //******************************************************************************************
 
-function draw() {
+draw = () => {
     background(rBackgroundSlider.value(), gBackgroundSlider.value(), bBackgroundSlider.value());
 
-    exampleSimbol = new Simbol();
-    exampleSimbol.setLineArea(lineAreaSlider.value()); // default 20
-    exampleSimbol.setLineCount(lineCountSlider.value()); // default 100
-    exampleSimbol.setLineThickness(thickSlider.value()/10); // default 1
-    exampleSimbol.setColorRandom(true); // default false
-    exampleSimbol.setRGB(rSlider.value(), gSlider.value(), bSlider.value()); // default (0, 0, 0), 
+    simbolOne = new Simbol();
+    simbolOne.setLineArea(lineAreaSlider.value()); // default 20
+    simbolOne.setLineCount(lineCountSlider.value()); // default 100
+    simbolOne.setLineThickness(thickSlider.value()/10); // default 1
+    simbolOne.setColorRandom(true); // default false
+    simbolOne.setRGB(rSlider.value(), gSlider.value(), bSlider.value()); // default (0, 0, 0), 
 
-    // exampleSimbol.dievs1(); // choose one or all or duplicate
-    // exampleSimbol.dievs2();
-    // exampleSimbol.marasL();
-    // exampleSimbol.zalktis1();
-    // exampleSimbol.zalktis2();
-    // exampleSimbol.jumis();
-    // exampleSimbol.zvaigzne1();
-    // exampleSimbol.zvaigzne2();
-    // exampleSimbol.marasK();
-    // exampleSimbol.laimasS();
-    // exampleSimbol.metenis();
-    // exampleSimbol.usins();
-    // exampleSimbol.austra();
-    // exampleSimbol.martins();
-    // exampleSimbol.aka();
-    // exampleSimbol.janis();
-    // exampleSimbol.austrasK();
-    exampleSimbol.krupitis();
-    // exampleSimbol.meness();
-    // exampleSimbol.saule();
-    // exampleSimbol.perkons();
-    // exampleSimbol.karogs();
-
-    for(let i = 0; i<sliderArray.length; i++){
-        sliderArray[i].size(sliderWidth);
-    }
+    // simbolOne.dievs1(); // choose one or all or duplicate
+    // simbolOne.dievs2();
+    // simbolOne.marasL();
+    // simbolOne.zalktis1();
+    // simbolOne.zalktis2();
+    // simbolOne.jumis();
+    // simbolOne.zvaigzne1();
+    // simbolOne.zvaigzne2();
+    // simbolOne.marasK();
+    // simbolOne.laimasS();
+    // simbolOne.metenis();
+    // simbolOne.usins();
+    // simbolOne.austra();
+    // simbolOne.martins();
+    // simbolOne.aka();
+    // simbolOne.janis();
+    // simbolOne.austrasK();
+    simbolOne.krupitis();
+    // simbolOne.meness();
+    // simbolOne.saule();
+    // simbolOne.perkons();
+    // simbolOne.karogs();
 
     noLoop(); // comment out for animation
-}
+};
 
-function mouseActions(){
-    loop();
-}
-
-function keyPressed(){
-    loop();
-}
-
-// FUNCTIONS FOR RESPONSIVE WINDOW SIZE******************************************************
+// FUNCTIONS FOR RESPONSIVE WINDOW SIZE, MOUSE ACTIONS AND KEY PRESSES***********************
 //*******************************************************************************************
 
 // this function deals with canvas size when window size is changed
-function windowResized(){
+windowResized = () => {
     canvasWidth = document.getElementById('canvas').offsetWidth;
     canvasHeight = canvasWidth/2;
-    sliderWidth = canvasWidth/5;
+    sliderWidth = canvasWidth/5; // sort of responsive slider width
     resizeCanvas(canvasWidth, canvasHeight);
-    // loop();
-}
+    for(let i = 0; i<sliderArray.length; i++){ // resize sliders
+        sliderArray[i].size(sliderWidth);
+    }
+};
 
-// LATVIAN SIMBOL OBJECTS/CLASSES/FUNCTIONS, I DONT KNOW************************************
+mouseActions = () => {
+    loop();
+};
+
+keyPressed = () => {
+    loop();
+};
+
+// SETUP FUNCTIONS**************************************************************************
+//******************************************************************************************
+canvasSetup = () => {
+    pixelDensity(2); // this sets the resolution of the canvas or something
+    canvas = createCanvas(canvasWidth, canvasHeight).parent("canvas"); // canvas is a div id
+    canvas.style("border", "2px solid #740D09");
+};
+
+backgroundSliderSetup = () => {
+    rBackgroundSlider = createSlider(0, 255, 255, 1).parent("rBackground");
+    rBackgroundSlider.size(sliderWidth);
+    rBackgroundSlider.mouseMoved(mouseActions);
+    gBackgroundSlider = createSlider(0, 255, 255, 1).parent("gBackground");
+    gBackgroundSlider.size(sliderWidth);
+    gBackgroundSlider.mouseMoved(mouseActions);
+    bBackgroundSlider = createSlider(0, 255, 255, 1).parent("bBackground");
+    bBackgroundSlider.size(sliderWidth);
+    bBackgroundSlider.mouseMoved(mouseActions);
+};
+
+colorSliderSetup = () => {
+    rSlider = createSlider(0, 255, 155, 1).parent("rColor");
+    rSlider.size(sliderWidth);
+    rSlider.mouseMoved(mouseActions);
+    gSlider = createSlider(0, 255, 0, 1).parent("gColor");
+    gSlider.size(sliderWidth);
+    gSlider.mouseMoved(mouseActions);
+    bSlider = createSlider(0, 255, 0, 1).parent("bColor");
+    bSlider.size(sliderWidth);
+    bSlider.mouseMoved(mouseActions);
+};
+
+thicknessSliderSetup = () => {
+    thickSlider = createSlider(1, 500, 20, 1).parent("thickSetting");
+    thickSlider.size(sliderWidth);
+    thickSlider.mouseMoved(mouseActions);
+};
+
+lineAreaSliderSetup = () => {
+    lineAreaSlider = createSlider(1, 100, 20, 1).parent("areaSetting");
+    lineAreaSlider.size(sliderWidth);
+    lineAreaSlider.mouseMoved(mouseActions);
+};
+
+lineCountSliderSetup = () => {
+    lineCountSlider = createSlider(1, 500, 100, 1).parent("countSetting");
+    lineCountSlider.size(sliderWidth);
+    lineCountSlider.mouseMoved(mouseActions);
+};
+
+
+// LATVIAN SIMBOL OBJECT/CLASSE/FUNCTION, I DONT KNOW***************************************
 //******************************************************************************************
 
 function Simbol() {
