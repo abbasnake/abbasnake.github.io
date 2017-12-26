@@ -1,0 +1,36 @@
+- convert processing sketch to javascript
+    - setup processing on ubuntu properly (if in processing folder, can open processing in terminal ./processing)
+    - pixel density/hd render
+    - the map() adjustments of line thickness and line area aren't mathematically sound
+
+- do proper welcome page
+    - maybe the background can just be random lines (completely random, like lineArea(1000), would make a picture probably in that case)
+    - sakuma animacija line area 500 lidz simbol un izlec sadalas
+
+- for background images or any other try using svg
+
+- 2 valodas
+
+- parak plika
+
+- registresanas
+
+- pdf nolade
+
+- press gallery img to enlarge
+
+- picture animations (info when hover)
+
+- search box
+
+- zimju aprakstu sadala, kad uz zimes hover, tad filter + apraksts
+
+- start using git branches for adding features etc
+
+- canvas is still not properly positioned, you can see it at certain sizes of the window
+
+- fonts top 15 hipster fonts
+
+- fonts baltic (https://www.fontsquirrel.com/fonts/list/language/latvian/50)
+
+- switch from bootstrap to css-grid
