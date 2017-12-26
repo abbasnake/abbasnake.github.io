@@ -14,6 +14,7 @@ let simbolThreeOn = false;
 let simbolOnArray = [simbolOneOn, simbolTwoOn, simbolThreeOn];
 
 const simbolNames = [
+"-",
 "dievs1",
 "dievs2",
 "marasL",
@@ -67,7 +68,10 @@ setup = () => {
     bSlider,
     thickSlider,
     lineAreaSlider,
-    lineCountSlider
+    lineCountSlider,
+    simbolOneSelector,
+    simbolTwoSelector,
+    simbolThreeSelector
     ];
 };
 
@@ -93,6 +97,9 @@ windowResized = () => {
     resizeCanvas(canvasWidth, canvasHeight);
     for(let i = 0; i<sliderArray.length; i++){ // resize sliders
         sliderArray[i].size(sliderWidth);
+    }
+    for(let i = 0; i<simbolArray.length; i++){ // resize sliders
+        simbolArray[i].size(sliderWidth);
     }
 };
 
@@ -163,6 +170,9 @@ simbolSelectorSetup = () => {
         simbolTwoSelector.option(simbolNames[i]);
         simbolThreeSelector.option(simbolNames[i]);
     }
+    simbolOneSelector.size(sliderWidth);
+    simbolTwoSelector.size(sliderWidth);
+    simbolThreeSelector.size(sliderWidth);
 };
 
 
