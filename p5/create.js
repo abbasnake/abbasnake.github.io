@@ -98,9 +98,6 @@ windowResized = () => {
     for(let i = 0; i<sliderArray.length; i++){ // resize sliders
         sliderArray[i].size(sliderWidth);
     }
-    for(let i = 0; i<simbolArray.length; i++){ // resize sliders
-        simbolArray[i].size(sliderWidth);
-    }
 };
 
 mouseActions = () => {
@@ -185,35 +182,38 @@ drawSimbols = () => {
     // create selected signs
     for(let i = 0; i<simbolOnArray.length; i++){
         if(simbolOnArray[i]){
-            simbolArray[i] = new Simbol();
-            simbolArray[i].setLineArea(lineAreaSlider.value()); // default 20
-            simbolArray[i].setLineCount(lineCountSlider.value()); // default 100
-            simbolArray[i].setLineThickness(thickSlider.value()/10); // default 1
-            simbolArray[i].setColorRandom(true); // default false
-            simbolArray[i].setRGB(rSlider.value(), gSlider.value(), bSlider.value()); // default (0, 0, 0), 
+            let simbolValue = simbolOneSelector.elt.value;
 
-            // simbolArray[i].dievs1(); // choose one or all or duplicate
-            // simbolArray[i].dievs2();
-            // simbolArray[i].marasL();
-            // simbolArray[i].zalktis1();
-            // simbolArray[i].zalktis2();
-            // simbolArray[i].jumis();
-            // simbolArray[i].zvaigzne1();
-            // simbolArray[i].zvaigzne2();
-            // simbolArray[i].marasK();
-            // simbolArray[i].laimasS();
-            // simbolArray[i].metenis();
-            // simbolArray[i].usins();
-            // simbolArray[i].austra();
-            // simbolArray[i].martins();
-            // simbolArray[i].aka();
-            // simbolArray[i].janis();
-            // simbolArray[i].austrasK();
-            simbolArray[i].krupitis();
-            // simbolArray[i].meness();
-            // simbolArray[i].saule();
-            // simbolArray[i].perkons();
-            // simbolArray[i].karogs();
+            if (simbolValue!="-"){
+                simbolArray[i] = new Simbol();
+                simbolArray[i].setLineArea(lineAreaSlider.value()); // default 20
+                simbolArray[i].setLineCount(lineCountSlider.value()); // default 100
+                simbolArray[i].setLineThickness(thickSlider.value()/10); // default 1
+                simbolArray[i].setColorRandom(true); // default false
+                simbolArray[i].setRGB(rSlider.value(), gSlider.value(), bSlider.value()); // default (0, 0, 0), 
+
+                if(simbolValue==="dievs1"){simbolArray[i].dievs1();}
+                if(simbolValue==="dievs2"){simbolArray[i].dievs2();}
+                if(simbolValue==="marasL"){simbolArray[i].marasL();}
+                if(simbolValue==="zalktis1"){simbolArray[i].zalktis1();}
+                if(simbolValue==="zalktis2"){simbolArray[i].zalktis2();}
+                if(simbolValue==="jumis"){simbolArray[i].jumis();}
+                if(simbolValue==="zvaigzne1"){simbolArray[i].zvaigzne1();}
+                if(simbolValue==="zvaigzne2"){simbolArray[i].zvaigzne2();}
+                if(simbolValue==="laimasS"){simbolArray[i].laimasS();}
+                if(simbolValue==="metenis"){simbolArray[i].metenis();}
+                if(simbolValue==="usins"){simbolArray[i].usins();}
+                if(simbolValue==="austra"){simbolArray[i].austra();}
+                if(simbolValue==="martins"){simbolArray[i].martins();}
+                if(simbolValue==="aka"){simbolArray[i].aka();}
+                if(simbolValue==="janis"){simbolArray[i].janis();}
+                if(simbolValue==="austrasK"){simbolArray[i].austrasK();}
+                if(simbolValue==="krupitis"){simbolArray[i].krupitis();}
+                if(simbolValue==="meness"){simbolArray[i].meness();}
+                if(simbolValue==="saule"){simbolArray[i].saule();}
+                if(simbolValue==="perkons"){simbolArray[i].perkons();}
+                if(simbolValue==="karogs"){simbolArray[i].karogs();}
+            }
         }
     }
 
