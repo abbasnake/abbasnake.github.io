@@ -14,7 +14,6 @@ let simbolThreeOn = false;
 let simbolOnArray = [simbolOneOn, simbolTwoOn, simbolThreeOn];
 
 const simbolNames = [
-"-",
 "dievs1",
 "dievs2",
 "marasL",
