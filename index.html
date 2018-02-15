@@ -1,117 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>home|LatvjuZimes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-
-    <!-- CUSTOM CSS LINK -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="grid">
-        <!-- TITLE ////////////////////////////////////////////////////-->
-        <header class="title">latvju zīmes</header>
-
-        <!-- NAVIGATION BAR ///////////////////////////////////////////////////////////////-->
-        <navbar class="navBar">
-            <a class="navBar__link" role="button" href="index.html">HOME</a>
-            <a class="navBar__link" role="button" href="pages/create.html">CREATE</a>
-            <a class="navBar__link" role="button" href="pages/gallery.html">GALLERY</a>
-            <a class="navBar__link" role="button" href="pages/about.html">ABOUT</a>
-        </navbar>
-
-        <!-- CANVAS ///////////////////////////////////////////////////-->
-        <!-- have to set an id for the p5.js reference to work -->
-        <div class="canvas" id="canvas">
-            <!-- p5 sketch goes here -->
-        </div>
-
-
-        <!-- CONTROLS /////////////////////////////////////////////////////-->
-
-        <!-- background color -->
-        <div class="bgCol">
-            <div class="slider" id="rBackground">
-                <!-- p5 sketch goes here -->
-                <div>BG RED</div>
-            </div>
-            <div class="slider" id="gBackground">
-                <!-- p5 sketch goes here -->
-                <div>BG GREEN</div>
-            </div>
-            <div class="slider" id="bBackground">
-                <!-- p5 sketch goes here -->
-                <div>BG BLUE</div>
-            </div>
-        </div>
-
-        <!-- simbol color -->
-        <div class="col">
-            <div class="slider" id="rColor">
-                <!-- p5 sketch goes here -->
-                <div>RED</div>
-            </div>
-            <div class="slider" id="gColor">
-                <!-- p5 sketch goes here -->
-                <div>GREEN</div>
-            </div>
-            <div class="slider" id="bColor">
-                <!-- p5 sketch goes here -->
-                <div>BLUE</div>
-            </div>
-        </div>
-
-        <!-- thickness, line area and line count -->
-        <div class="lineControls">
-            <div class="slider" id="thickSetting">
-                <!-- p5 sketch goes here -->
-                <div>THICKNESS</div>
-            </div>
-            <div class="slider" id="areaSetting">
-                <!-- p5 sketch goes here -->
-                <div>AREA</div>
-            </div>
-            <div class="slider" id="countSetting">
-                <!-- p5 sketch goes here -->
-                <div>COUNT</div>
-            </div>
-        </div>
-
-        <!-- thickness, line area and line count -->
-        <div class="simbols">
-            <div class="dropdown" id="simbolOne">
-                <!-- p5 sketch goes here -->
-                <div>SIMBOL 1</div>
-            </div>
-            <div class="dropdown" id="simbolTwo">
-                <!-- p5 sketch goes here -->
-                <div>SIMBOL 2</div>
-            </div>
-            <div class="dropdown" id="simbolThree">
-                <!-- p5 sketch goes here -->
-                <div>SIMBOL 3</div>
-            </div>
-        </div>
-
-
-    </div> <!-- grid end -->
-
-    <!-- p5 processing sketch ////////////////////////////////////////-->
-    <script 
-    language="javascript" 
-    type="text/javascript" 
-    src="p5/libraries/p5.js"></script>
-    <script 
-    language="javascript" 
-    type="text/javascript" 
-    src="p5/libraries/p5.dom.js"></script>
-    <script 
-    language="javascript" 
-    type="text/javascript" 
-    src="p5/create.js"></script>
+        <a class="projects latvju-zimes" href="projects/latvju-zimes/latvju-zimes.html">
+            <h1 class="titles">Latvju Zīmes</h1>
+        </a>
+        <a class="projects" href="#">
+            <h1 class="titles">Coming Soon</h1>
+        </a>
+        <a class="projects" href="#">
+            <h1 class="titles">Coming Soon</h1>
+        </a>
+    </div>
 </body>
 </html>
