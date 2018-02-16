@@ -1,38 +1,28 @@
-body {
+ html, body {
     margin: 0;
     padding: 0;
-    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    background-color: black;
+}
+
+canvas {
+    border: 1px solid black;
+    position:absolute;
+    z-index: -1;
 }
 
 .grid {
     display: grid;
-    border: 1px solid black;
-    max-width: 960px;
-    padding: 1px;
-    margin: 0 auto;
     text-align: center;
-    grid-auto-rows: 1fr;
-    height: 99vh;
 }
 
 .projects {
-    border: 1px solid red;
     text-decoration: none;
-    color: black;
-    filter: grayscale(80%);
+    color: white;
 }
 
-.projects:hover {
-    border: 5px solid red;
-    filter: grayscale(0);
-}
-
-.titles {
-    /*margin: auto 0;*/
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 28px;
-    }
+.projects:hover{
+    text-decoration: underline;
+    color: #74ccf4;
 }
