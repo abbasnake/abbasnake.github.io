@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.c99a4a09aefd734d30c266b6eb3a27ce.js"
+  "https://abbasnake.github.io/CustomIntervalTimer/dist/precache-manifest.d3d13795b94ee9764f42d1e7582323b6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "custom-hiit"});
