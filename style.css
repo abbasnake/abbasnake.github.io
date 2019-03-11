@@ -1,0 +1,54 @@
+/* VARIABLES */
+:root{
+  --background-color: #222831;
+  --border-color: #393e46;
+  --border-color-hover: #eeeeee;
+  --font-size: 40px;
+  --text-color: #b55400;
+}
+
+/* GLOBAL STYLES */
+html,
+body,
+div,
+a {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* CONTAINER STYLES */
+.container {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+}
+
+/* LINK STYLES */
+.link {
+  align-items: center;
+  border: 2px solid;
+  border-color: var(--border-color);
+  color: var(--text-color);
+  display: flex;
+  font-size: var(--font-size);
+  height: 20%;
+  justify-content: center;
+  margin: 0 auto 10px;
+  max-width: 800px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.link:hover {
+  border-color: var(--border-color-hover);
+}
