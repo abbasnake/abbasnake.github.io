@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/media/beep.219f187e.wav"
   },
   {
-    "revision": "379469f8c390eeded64511a9bb6178ae",
+    "revision": "383371fbc81609f5a9bd85d8a36ecdae",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
