@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/chunk-78683fb3.14b5641f.css"
   },
   {
-    "revision": "1f2de095dd58a9ea7a15",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.966b573a.js"
+    "revision": "c1e8863601a1765d0039",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.ac9bf796.js"
   },
   {
     "revision": "16a73221c9fdb09bf2df",
@@ -64,11 +64,11 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/media/beep.219f187e.wav"
   },
   {
-    "revision": "1981feb24eeacc0079f71a673e3dfabb",
+    "revision": "379469f8c390eeded64511a9bb6178ae",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
-    "revision": "1f2de095dd58a9ea7a15",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.683fe738.css"
+    "revision": "c1e8863601a1765d0039",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.bb244eed.css"
   }
 ];
