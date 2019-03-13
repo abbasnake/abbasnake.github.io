@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.8b14582311fdd0c31715d2825463741c.js"
+  "/precache-manifest.eb33055cf564b1fe6d61b190b8d49e31.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "custom-hiit"});
