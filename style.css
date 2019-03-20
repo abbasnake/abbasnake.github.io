@@ -3,7 +3,8 @@
   --background-color: #222831;
   --border-color: #393e46;
   --border-color-hover: #eeeeee;
-  --font-size: 40px;
+  --font-size-project: 40px;
+  --font-size-repo: 18px;
   --text-color: #b55400;
 }
 
@@ -34,21 +35,40 @@ body {
 }
 
 /* LINK STYLES */
-.link {
-  align-items: center;
+.project {
   border: 2px solid;
   border-color: var(--border-color);
-  color: var(--text-color);
   display: flex;
-  font-size: var(--font-size);
-  height: 20%;
-  justify-content: center;
+  flex-direction: column;
+  height: 140px;
   margin: 0 auto 10px;
   max-width: 800px;
-  text-decoration: none;
+  padding: 5px 0;
   width: 100%;
 }
 
-.link:hover {
+.project:hover {
   border-color: var(--border-color-hover);
+}
+
+.link {
+  align-items: center;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link--project {
+  flex: 3;
+  font-size: var(--font-size-project);
+}
+
+.link--repo {
+  flex: 1;
+  font-size: var(--font-size-repo);
 }
