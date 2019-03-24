@@ -1,6 +1,6 @@
 {
-  "name": "custom-hiit",
-  "short_name": "custom-hiit",
+  "name": "LoopIt",
+  "short_name": "LoopIt",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
