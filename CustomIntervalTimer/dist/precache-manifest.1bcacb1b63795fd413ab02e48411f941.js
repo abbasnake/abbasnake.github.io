@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.c17a0d44.js"
   },
   {
-    "revision": "caf19f4f49710c2bf82cc9355c9de837",
+    "revision": "203f585a688e9eeb499c428e60dbe8fe",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
