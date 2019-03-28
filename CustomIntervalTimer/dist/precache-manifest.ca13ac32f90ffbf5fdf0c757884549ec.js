@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/media/beep.9a1c4d24.mp3"
   },
   {
-    "revision": "81bb5cf53b34d6d2df96",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/run.ae28ef8c.js"
+    "revision": "d3b0eb4be0050b26d3d6",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/run.870b0314.js"
   },
   {
-    "revision": "a50a3855009c635316ca",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/chunk-vendors.9bdfdcba.js"
+    "revision": "4dd6cd24c2ea8df2e8d7",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/chunk-vendors.2030aa25.js"
   },
   {
-    "revision": "96d8390d30710a6b30df",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.f8261e89.js"
+    "revision": "6aed1e38a7793d1f60b5",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.d7649a9e.js"
   },
   {
-    "revision": "61b5f7d6cfffbd75dd0513b25dda6a61",
+    "revision": "67f825de190794c713c240b2b4e018b9",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
@@ -40,11 +40,11 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Bold.26e43bbf.ttf"
   },
   {
-    "revision": "81bb5cf53b34d6d2df96",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/run.32bf886d.css"
+    "revision": "d3b0eb4be0050b26d3d6",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/run.2d90d6d9.css"
   },
   {
-    "revision": "96d8390d30710a6b30df",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.a45a2d78.css"
+    "revision": "6aed1e38a7793d1f60b5",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.f379ee1a.css"
   }
 ];
