@@ -8,16 +8,16 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/robots.txt"
   },
   {
-    "revision": "26e43bbf04cf1c28a972741cd6ba953f",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Bold.26e43bbf.ttf"
+    "revision": "18c8c580b8a0b2b7a7e392c5a20ada52",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Regular.18c8c580.ttf"
   },
   {
     "revision": "4dd6cd24c2ea8df2e8d7",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/chunk-vendors.2030aa25.js"
   },
   {
-    "revision": "015bf57628dd102cef6c",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/run.f66adaca.js"
+    "revision": "65076408befd3c9682db",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/run.755b4370.js"
   },
   {
     "revision": "9a1c4d247d791273aeebae8c2cefee8f",
@@ -32,23 +32,23 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/media/whistle2x.009d5ecf.mp3"
   },
   {
-    "revision": "10e63e517a26e95cfa29",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.bf5b21fc.js"
+    "revision": "ced887af41c1d92a4793",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.905da2f1.js"
   },
   {
-    "revision": "94d32837d68830ec66f5ec636e9a1f90",
+    "revision": "daa52a63a6b0a65ab486990990470a59",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
-    "revision": "18c8c580b8a0b2b7a7e392c5a20ada52",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Regular.18c8c580.ttf"
+    "revision": "26e43bbf04cf1c28a972741cd6ba953f",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Bold.26e43bbf.ttf"
   },
   {
-    "revision": "015bf57628dd102cef6c",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/run.c39975c5.css"
+    "revision": "65076408befd3c9682db",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/run.a42473e8.css"
   },
   {
-    "revision": "10e63e517a26e95cfa29",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.c7ab1f85.css"
+    "revision": "ced887af41c1d92a4793",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.e309ff75.css"
   }
 ];
