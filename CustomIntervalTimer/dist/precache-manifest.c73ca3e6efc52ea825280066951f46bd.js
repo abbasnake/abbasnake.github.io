@@ -44,11 +44,11 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/media/beepSemitoneDown.0aa7e142.mp3"
   },
   {
-    "revision": "7fff916a89e5df5e47d7",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.76357b54.js"
+    "revision": "7a04781e9e5a83b4b932",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.b6e56681.js"
   },
   {
-    "revision": "ec05adcfef43c008da8ed5861d71d7b3",
+    "revision": "ef5e9f2d6f72827a1eb870d4b7ae1d8a",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/run.37f9a72d.css"
   },
   {
-    "revision": "7fff916a89e5df5e47d7",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.70986823.css"
+    "revision": "7a04781e9e5a83b4b932",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.0e84b570.css"
   }
 ];
