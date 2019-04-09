@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "26e43bbf04cf1c28a972741cd6ba953f",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Bold.26e43bbf.ttf"
+    "revision": "f2ba7b2596970f923b319bd605cc1287",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-SemiBold.f2ba7b25.ttf"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/robots.txt"
   },
   {
-    "revision": "f2ba7b2596970f923b319bd605cc1287",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-SemiBold.f2ba7b25.ttf"
+    "revision": "26e43bbf04cf1c28a972741cd6ba953f",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Bold.26e43bbf.ttf"
   },
   {
     "revision": "4dd6cd24c2ea8df2e8d7",
@@ -44,11 +44,11 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/media/whistle2x.009d5ecf.mp3"
   },
   {
-    "revision": "f0ea3acaf011292b6637",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.5c921e31.js"
+    "revision": "de26ab045b49adaa9dd4",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.7ea68f18.js"
   },
   {
-    "revision": "0c341e6798448cdc61641b1646587faf",
+    "revision": "553e0056697ce2a658bddaeb38f10bbe",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/run.37f9a72d.css"
   },
   {
-    "revision": "f0ea3acaf011292b6637",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.7f0e3abe.css"
+    "revision": "de26ab045b49adaa9dd4",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.1b75e3c1.css"
   }
 ];
