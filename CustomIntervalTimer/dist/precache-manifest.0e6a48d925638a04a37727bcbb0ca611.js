@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "26e43bbf04cf1c28a972741cd6ba953f",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Bold.26e43bbf.ttf"
+    "revision": "f2ba7b2596970f923b319bd605cc1287",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-SemiBold.f2ba7b25.ttf"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/robots.txt"
   },
   {
-    "revision": "18c8c580b8a0b2b7a7e392c5a20ada52",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Regular.18c8c580.ttf"
+    "revision": "26e43bbf04cf1c28a972741cd6ba953f",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Bold.26e43bbf.ttf"
   },
   {
     "revision": "4dd6cd24c2ea8df2e8d7",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/chunk-vendors.2030aa25.js"
   },
   {
-    "revision": "70bbe2727c25c1f10945",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/run.8c7928a1.js"
+    "revision": "6d90e998d20b6c0e519b",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/run.716e2712.js"
   },
   {
     "revision": "9a1c4d247d791273aeebae8c2cefee8f",
@@ -44,23 +44,23 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/media/beepSemitoneDown.0aa7e142.mp3"
   },
   {
-    "revision": "92c7007b4e38dc26a198",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.d066892b.js"
+    "revision": "8ac797c9f77724ed8176",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/js/app.131f64f3.js"
   },
   {
-    "revision": "d49458f0d74eaa7529dea62ceabbf58d",
+    "revision": "7af8196bfbeeb5768783d21e26af3bf2",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/index.html"
   },
   {
-    "revision": "f2ba7b2596970f923b319bd605cc1287",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-SemiBold.f2ba7b25.ttf"
+    "revision": "18c8c580b8a0b2b7a7e392c5a20ada52",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/fonts/SairaCondensed-Regular.18c8c580.ttf"
   },
   {
-    "revision": "70bbe2727c25c1f10945",
+    "revision": "6d90e998d20b6c0e519b",
     "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/run.37f9a72d.css"
   },
   {
-    "revision": "92c7007b4e38dc26a198",
-    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.1b75e3c1.css"
+    "revision": "8ac797c9f77724ed8176",
+    "url": "https://abbasnake.github.io/CustomIntervalTimer/dist/css/app.b92124ac.css"
   }
 ];
