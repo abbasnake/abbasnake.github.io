@@ -24,11 +24,11 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/Osta/dist/js/chunk-vendors.54d01841.js"
   },
   {
-    "revision": "d9304b581c102fa1f4cd",
-    "url": "https://abbasnake.github.io/Osta/dist/js/app.6018b7c4.js"
+    "revision": "9c54d908c55014a5b87d",
+    "url": "https://abbasnake.github.io/Osta/dist/js/app.762c3901.js"
   },
   {
-    "revision": "9888d325175fda3b5bd2a9c0de10fefb",
+    "revision": "716a21186e6f97b7f2b4b44047b9e80c",
     "url": "https://abbasnake.github.io/Osta/dist/index.html"
   },
   {
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/Osta/dist/css/container.6e4e47e6.css"
   },
   {
-    "revision": "d9304b581c102fa1f4cd",
+    "revision": "9c54d908c55014a5b87d",
     "url": "https://abbasnake.github.io/Osta/dist/css/app.ffd5d42c.css"
   }
 ];

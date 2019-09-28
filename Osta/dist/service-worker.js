@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://abbasnake.github.io/Osta/dist/precache-manifest.ab772da08f4f9a207327b5d48e7c5513.js"
+  "https://abbasnake.github.io/Osta/dist/precache-manifest.bfc5918c42300d9b4076e37a80637971.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "osta"});
