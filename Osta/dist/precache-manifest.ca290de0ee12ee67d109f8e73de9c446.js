@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/Osta/dist/robots.txt"
   },
   {
-    "revision": "fbc569005f0fc7fea5d8",
-    "url": "https://abbasnake.github.io/Osta/dist/js/project.5195e7de.js"
+    "revision": "6735e7b94b5dc5b86dfe",
+    "url": "https://abbasnake.github.io/Osta/dist/js/project.a0b8aaa9.js"
   },
   {
     "revision": "88da37637b147e4afc3e",
     "url": "https://abbasnake.github.io/Osta/dist/js/container.1d2922be.js"
   },
   {
-    "revision": "ab8ad5e73909e2c91502",
-    "url": "https://abbasnake.github.io/Osta/dist/js/chunk-vendors.77950657.js"
+    "revision": "60b993ca6d63aec4f727",
+    "url": "https://abbasnake.github.io/Osta/dist/js/chunk-vendors.b936989a.js"
   },
   {
-    "revision": "7c9f2b23191f94a0205e",
-    "url": "https://abbasnake.github.io/Osta/dist/js/app.39c7aed1.js"
+    "revision": "c688aef9050eea9b46d5",
+    "url": "https://abbasnake.github.io/Osta/dist/js/app.8ca75b20.js"
   },
   {
-    "revision": "d3c7a2f8856925c825d696c2969a056b",
+    "revision": "a41f10dc40c7fd74e51a28f5b82fd5af",
     "url": "https://abbasnake.github.io/Osta/dist/index.html"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/Osta/dist/img/jaunzeltini-logo-62s.240d28f4.png"
   },
   {
-    "revision": "fbc569005f0fc7fea5d8",
-    "url": "https://abbasnake.github.io/Osta/dist/css/project.36d59eb7.css"
+    "revision": "6735e7b94b5dc5b86dfe",
+    "url": "https://abbasnake.github.io/Osta/dist/css/project.1b94d5e3.css"
   },
   {
     "revision": "843ac5c011e968aec92d",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "https://abbasnake.github.io/Osta/dist/css/container.c1168a4e.css"
   },
   {
-    "revision": "7c9f2b23191f94a0205e",
-    "url": "https://abbasnake.github.io/Osta/dist/css/app.8689366d.css"
+    "revision": "c688aef9050eea9b46d5",
+    "url": "https://abbasnake.github.io/Osta/dist/css/app.cdf13801.css"
   }
 ];
