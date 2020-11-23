@@ -1,0 +1,5 @@
+.Main.svelte-duxxuk{max-width:100rem;margin:0 auto;border:5px solid;display:flex;flex-direction:column;align-items:center}.rows.svelte-duxxuk{display:flex;flex-wrap:wrap}
+.Input.svelte-le7pes{display:flex}.Input__input.svelte-le7pes{margin-right:1rem}
+.ItemRow.svelte-1xyoyad{display:flex;font-size:1.4rem;margin:0.8rem}.label.svelte-1xyoyad{background-color:rgba(0, 0, 0, 0.1);border-radius:4px;border:1px solid;cursor:pointer;outline:none;overflow:hidden;padding:0.4rem;text-align:center;text-overflow:ellipsis;transition:color 200ms, background-color 200ms, border-color 200ms;white-space:nowrap;width:12rem}.label--selected.svelte-1xyoyad,.label.svelte-1xyoyad:hover{background-color:black;border-color:rgba(0, 0, 0, 0.1);color:white}.label--child.svelte-1xyoyad{background-color:#0f0}.label--parent.svelte-1xyoyad{background-color:#090}.delete.svelte-1xyoyad{background-color:red;border-radius:4px;color:white;cursor:pointer;min-width:2.4rem;outline:none;outline:none;padding:0.4rem;text-align:center}
+
+/*# sourceMappingURL=bundle.css.map */
