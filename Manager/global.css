@@ -12,7 +12,7 @@ body {
 *:before,
 *:after {
   box-sizing: inherit;
-  position: inherit; }
+  position: relative; }
 
 h1,
 h2,
